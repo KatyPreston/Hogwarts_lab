@@ -16,6 +16,13 @@ class Student
     return "#{@first_name} #{@last_name}"
   end
 
+  def house_info()
+  sql = "SELECT houses.* FROM houses WHERE houses.name = $1"
+  values = [@house]
+  house_hash = SqlRunner.run(sql, values)
+  house = House.new(house_hash.first)
+  return house
+end
 
   def save()
     sql = "INSERT INTO students

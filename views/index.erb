@@ -2,7 +2,12 @@
 
 <% for student in @students %>
   <p>Name: <%= student.fancy_name() %></p>
-  <p>House: <%= student.house %></p>
+  <p>House: <%= student.house_info.name %></p>
+  <p> <img src="<%= student.house_info.url%>" alt="House logo">  </p>
   <p>Age: <%= student.age %></p>
+
+  <form method="post" action="/students/<%= student.id %>/delete">
+    <input type="submit" value="Delete student">
+  </form>
   <hr />
 <%end  %>

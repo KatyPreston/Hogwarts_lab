@@ -5,9 +5,9 @@
 <input type="text" name="last_name" id="last-name"  placeholder="put your last name here">
 
 <label for="House-select"> Select a House:</label>
-<select name="house" id="house-select">
+<select name="house_id" id="house-select">
 <% for house in @houses %>
-<option value="<%= house.name %>"> <%= house.name %></option>
+<option value="<%= house.id %>"> <%= house.name %></option>
 <%end  %>
 </select>
 

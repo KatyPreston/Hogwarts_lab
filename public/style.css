@@ -1,0 +1,30 @@
+img {
+  height: 200px;
+  width: auto;
+  }
+h2  {
+  text-align: center;
+}
+.container {
+  text-align: center;
+}
+
+.image {
+  display: block;
+  flex-direction: column;
+
+}
+
+nav {
+  background-color: darkgrey;
+}
+
+li {
+  list-style: none;
+  justify-content: center;
+}
+
+nav li {
+  display: inline;
+
+}

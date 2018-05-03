@@ -1,0 +1,8 @@
+<p>All the students!</p>
+
+<% for student in @students %>
+  <p>Name: <%= student.fancy_name() %></p>
+  <p>House: <%= student.house %></p>
+  <p>Age: <%= student.age %></p>
+  <hr />
+<%end  %>

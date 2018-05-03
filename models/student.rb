@@ -12,6 +12,11 @@ class Student
     @age = options["age"].to_i
   end
 
+  def fancy_name()
+    return "#{@first_name} #{@last_name}"
+  end
+
+
   def save()
     sql = "INSERT INTO students
     (
